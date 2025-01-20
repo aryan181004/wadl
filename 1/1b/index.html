@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auth</title>
+    <style>
+      * {
+        background: #acbec8;
+      }
+      #id1,
+      #id2,
+      #id3 {
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AUTH</h1>
+    <p>enter password <input type="password" id="id1" /></p>
+    <p>enter SAME password again <input type="password" id="id2" /></p>
+    <button type="submit" id="id3" onclick="check()">CHECK</button>
+    <script type="text/javascript">
+      function check() {
+        const p1 = document.getElementById("id1");
+        const p2 = document.getElementById("id2");
+        if (p1.value === p2.value) {
+          confirm("CORRECT!");
+        } else {
+          alert("WRONG!");
+        }
+      }
+    </script>
+  </body>
+</html>
