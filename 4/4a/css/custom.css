@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  [data-role="page"] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes up the full viewport height */
+  }
+  
+  [data-role="content"] {
+    flex: 1; /* Pushes the footer to the bottom if content is short */
+  }
+  
+  [data-role="footer"] {
+    position: static; /* Ensures the footer is part of the normal flow */
+    text-align: center;
+  }
+  
